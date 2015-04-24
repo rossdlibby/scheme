@@ -1,10 +1,30 @@
-<form action="" method="POST">
-	<script
-		src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-		data-key="pk_test_eCAeoIznOgMb6kFQ69eLZV0A"
-		data-amount="2000"
-		data-name="Demo Site"
-		data-description="2 widgets ($20.00)"
-		data-image="/128x128.png">
-	</script>
-</form>
+<!doctype html>
+<html>
+<head>
+	<script src="//use.typekit.net/tgi3rgm.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+	<h2 class="tk-bebas-neue">Pay with Credit Card</h2>
+	<form action="" method="POST">
+		<script
+			src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+			data-key="pk_test_eCAeoIznOgMb6kFQ69eLZV0A"
+			data-amount="2000"
+			data-name="Demo Site"
+			data-description="2 widgets ($20.00)"
+			data-image="/128x128.png">
+		</script>
+	</form>
+
+	<hr>
+
+	<h2 class="tk-bebas-neue">Pay with PayPal</h2>
+	<script src="paypal-button.min.js?merchant=YOUR_MERCHANT_ID"
+		data-button="buynow"
+		data-name="My product"
+		data-amount="1.00"
+		async
+	></script>
+</body>
+</html>
